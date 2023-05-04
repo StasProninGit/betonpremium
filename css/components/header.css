@@ -1,13 +1,18 @@
-.header {
-  background-image: url(/img/header1.png);
+/* .header {
+  background-image: url(/betonpremium/img/header1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .header__content {
   display: flex;
   justify-content: space-between;
+  background-image: url(/betonpremium/img/header1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .header__content__logo {

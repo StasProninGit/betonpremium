@@ -26,7 +26,8 @@ img {
 }
 
 body {
-  font-family: 'Muller', sans-serif;
+  background-color: rgb(250, 247, 243);
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {
