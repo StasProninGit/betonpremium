@@ -10,9 +10,11 @@
 @import "components/nav.css";
 @import "components/swiper.css";
 @import "components/beton.css";
-
+@import "components/avtobetononasos.css";
+@import "components/about.css";
 
 
 :root {
     --blue: #377ccd;
+    --black: black;
 }

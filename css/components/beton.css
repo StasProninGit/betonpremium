@@ -11,8 +11,8 @@
   position: relative;
   margin: 0 auto;
   background: none;
-  
-  
+
+
 }
 .tabs::before,
 .tabs::after {
@@ -46,9 +46,10 @@
 .tab-label:hover {
   top: -0.25rem;
   transition: top 0.25s;
+  color: var(--black);
 }
 .tab-content {
-  height: fit-content;
+  height: max-content;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -71,12 +72,15 @@
   top: -0.0625rem;
 }
 .tab-switch:checked + label + .tab-content {
+  height: auto;
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
 }
 
-
+.beton {
+  height: 550px;
+}
 
 .beton__title {
   margin-bottom: 30px;
@@ -88,7 +92,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .tovarnybeton__list__item {

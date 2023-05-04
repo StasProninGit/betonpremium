@@ -1,0 +1,100 @@
+.avtobetononasos__title {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  font-size: 48px;
+}
+
+.avtobetononasos__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.avtobetononasos__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 360px;
+  border: 3px solid grey;
+}
+
+.avtobetononasos__card__img {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.card__title {
+font-size: 26px;
+color: var(--blue);
+font-weight: 700;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.card__price {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  gap: 10px;
+
+}
+
+
+
+.card__btn {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0 auto 20px auto;
+}
+
+.card__btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.card__btn:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .card__btn {
+    padding: 16px 48px;
+  }
+}
+
