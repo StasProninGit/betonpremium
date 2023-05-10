@@ -12,9 +12,15 @@
 @import "components/beton.css";
 @import "components/avtobetononasos.css";
 @import "components/about.css";
+@import "components/book.css";
 
 
 :root {
     --blue: #377ccd;
     --black: black;
+    --white: white;
+    --redlight: #F64C72;
+    --grey:#707070;
+    --red: red;
+    --orange: #FFA200;
 }

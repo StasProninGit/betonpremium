@@ -1,100 +1,103 @@
 .avtobetononasos__title {
+  width: fit-content;
   margin-bottom: 30px;
   margin-left: 20px;
   font-size: 48px;
+  font-weight: 800;
+  background-color: var(--orange);
 }
 
 .avtobetononasos__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 15px;
 }
 
-.avtobetononasos__card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  max-width: 360px;
-  border: 3px solid grey;
+body{ background:url(/img/5.gif);
+  background-size: cover;
+  background-position:top;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
 }
 
-.avtobetononasos__card__img {
-  border-radius: 10px 10px 0 0;
-  margin-bottom: 10px;
+.avtobetononasos__items {
+  outline: none;
 }
 
-.card__title {
-font-size: 26px;
-color: var(--blue);
-font-weight: 700;
-margin-bottom: 10px;
-text-align: center;
+.avtobetononasos__card{
+  display:flex;
+  flex-direction:column;
+  width:400px;
+  margin-bottom:60px;
 }
-
-.card__price {
-  font-size: 26px;
+.avtobetononasos__card>div{
+  box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+}
+.avtobetononasos__card-image{
+  width:400px;
+  height:250px;
+}
+.avtobetononasos__card-image>img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:bottom;
+}
+.avtobetononasos__card-text{
+  margin:-30px auto;
+  margin-bottom:-50px;
+  height:300px;
+  width:300px;
+  background-color:#1D1C20;
+  color:#fff;
+  padding:20px;
+}
+.avtobetononasos__card-meal-type{
+  font-style:italic;
+}
+.avtobetononasos__card-title{
+  font-size:22px;
+  margin-bottom:20px;
+  margin-top:5px;
+}
+.avtobetononasos__card-body{
+  font-size:18px;
+}
+.avtobetononasos__card-price{
+  width:130px;
+  height:60px;
+  color:var(--black);
+  outline: none;
+  margin-left:auto;
+  font-size:22px;
   font-weight: 700;
-  text-align: center;
-  color: red;
-  margin-bottom: 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  border: none;
 }
 
-.card__info {
-  display: flex;
-  flex-direction: column;
-  padding-left: 25px;
-  margin-bottom: 20px;
-  gap: 10px;
-
+.avtobetononasos__card button {
+  outline: none;
 }
 
+  .avtobetononasos__card-price:focus {
+    background-color:none;
+    text-decoration: none;
+    border: none;
+    outline: 3px solid var(--black);
+    color: var(--red);
 
 
-.card__btn {
-  background-color: #0078d0;
-  border: 0;
-  border-radius: 56px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  outline: 0;
-  padding: 16px 21px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 0 auto 20px auto;
-}
-
-.card__btn:before {
-  background-color: initial;
-  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-  border-radius: 125px;
-  content: "";
-  height: 50%;
-  left: 4%;
-  opacity: .5;
-  position: absolute;
-  top: 0;
-  transition: all .3s;
-  width: 92%;
-}
-
-.card__btn:hover {
-  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-  transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-  .card__btn {
-    padding: 16px 48px;
   }
-}
+  .avtobetononasos__card-price:hover {
+    background-color:var(--orange) ;
+    border: none;
+    outline: 3px solid var(--black);
+    text-decoration: none;
+    color: var(--black);
+  }
+
 
