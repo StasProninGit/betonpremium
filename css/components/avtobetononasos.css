@@ -14,7 +14,7 @@
   gap: 15px;
 }
 
-body{ background:url(/img/5.gif);
+body{ background:url(/betonpremium/img/5.gif);
   background-size: cover;
   background-position:top;
   background-attachment:fixed;
@@ -98,6 +98,13 @@ body{ background:url(/img/5.gif);
     outline: 3px solid var(--black);
     text-decoration: none;
     color: var(--black);
+  }
+
+  .avtobetononasos__card-title {
+    color: red;
+  }
+  .card-red {
+    color: red;
   }
 
 

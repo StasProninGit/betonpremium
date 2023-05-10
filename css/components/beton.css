@@ -39,6 +39,7 @@
   border-radius: 10px 10px 0 0;
   color: #fff;
   cursor: pointer;
+  font-size: 20px;
   font-weight: 700;
   top: 0;
   transition: all 0.25s;
@@ -115,9 +116,10 @@
 
 
 .tovarnybeton__list__item__name {
+  font-size: 20px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
-  padding: 5px;
+  padding: 3px;
   cursor: pointer;
 }
 
@@ -129,7 +131,16 @@
   transform: scale(1.1);
 }
 
+.name-mark {
+  transition: color 0.3s ease-in-out;
+}
+.tovarnybeton__list__item__name:hover .name-mark {
+  color: red;
+}
+
 .tovarnybeton__list__item__price {
+  font-size: 22px;
+  color: red;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
   padding: 5px;
@@ -141,6 +152,11 @@
   color: #fff;
   font-weight: 700;
   transform: scale(1.1)
+}
+
+.name-mark {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 

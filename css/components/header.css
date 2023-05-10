@@ -1,6 +1,7 @@
 .header__content {
   display: flex;
   justify-content: space-between;
+  /* background-color: var(--gray); */
 }
 
 .header__svg {
