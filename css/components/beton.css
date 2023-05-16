@@ -80,17 +80,21 @@
 }
 
 .beton {
-  height: 600px;
+  height: 700px;
 }
 
 .beton__title {
+  padding: 5px 15px;
   width: fit-content;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 20px;
   font-size: 48px;
   font-weight: 800;
-  background-color: var(--orange);
+  background-color: var(--gray);
+  border-radius: 30px;
+  border: 5px solid #fff;
+  color: #fff;
 }
 
 .tovarnybeton__list {

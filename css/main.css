@@ -13,7 +13,8 @@
 @import "components/avtobetononasos.css";
 @import "components/about.css";
 @import "components/book.css";
-
+@import "components/test.css";
+@import "components/footer.css";
 
 :root {
     --blue: #377ccd;
