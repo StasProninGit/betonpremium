@@ -91,6 +91,8 @@ document.getElementById('tg2').addEventListener('submit', function(e) {
 
 })
 
+window.addEventListener
+
 
 
 
