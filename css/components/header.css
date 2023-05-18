@@ -3,6 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  margin-bottom: 60px;
 }
 
 .header__content {
@@ -90,6 +91,17 @@
 
 .header__content__right__tel:hover {
   text-decoration: none;
+  background-color: rgb(253, 110, 74);
   color: black;
   transform: scale(1.1);
+}
+
+.header__content__right__mail {
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__content__right__mail:hover {
+  text-decoration: none;
+  color: black;
 }

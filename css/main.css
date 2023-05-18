@@ -5,7 +5,7 @@
 
 
 /* components */
-
+@import "components/head.css";
 @import "components/header.css";
 @import "components/nav.css";
 @import "components/swiper.css";
