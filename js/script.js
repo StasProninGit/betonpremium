@@ -93,6 +93,36 @@ document.getElementById('tg2').addEventListener('submit', function(e) {
 
 window.addEventListener
 
+document.getElementById('tg3').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  let message = 'Заявка с Сайта!\n';
+  message += `Имя: ${this.name.value}\n`;
+  message += `Тел: ${ this.tel.value}\n`;
+
+  axios.post(URI_API, {
+    chat_id: CHAT_ID,
+    pars_mode: 'html',
+    text: message
+  })
+  .then((res) => {
+    this.name.value ="";
+    this.tel.value ="";
+    suc2.innerHTML = "Сообщение отправлено";
+    suc2.style.display = "block";
+  })
+  .catch((err) => {
+    console.warn(err);
+  })
+  .finally((res) => {
+    console.log('Конец')
+  })
+
+})
+
+window.addEventListener
+
+
 
 
 
