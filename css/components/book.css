@@ -1,11 +1,8 @@
 .book__title {
-  padding: 5px 15px;
-  width: fit-content;
-  color: white;
-  font-size: 48px;
   font-weight: 800;
-  background-color: var(--gray);
-  border-radius: 30px;
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: rgb(253, 110, 74);
 
 }
 

@@ -12,7 +12,7 @@
 
 .head {
   height: 500px;
-  background: url(/betonpremium/img/head1.png);
+  background: url(img/head1.png);
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: right;
@@ -32,7 +32,7 @@
 }
 
 .head__list__item::before {
-  content: url(/betonpremium/img/headcheck.svg);
+  content: url(img/headcheck.svg);
   position: absolute;
   top: -5px;
   left: 0;
