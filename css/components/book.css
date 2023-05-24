@@ -1,0 +1,51 @@
+.book__title {
+  font-weight: 800;
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: rgb(253, 110, 74);
+
+}
+
+.book .book__form {
+  padding: 20px;
+  background-color: var(--gray);
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: white;
+}
+.form-label {
+  font-size: 20px;
+}
+
+.btn-primary {
+  width:130px;
+  height:60px;
+  color:var(--black);
+  background-color: var(--orange);
+  outline: none;
+  font-size:22px;
+  font-weight: 700;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  border: none;
+}
+
+.btn-primary:focus {
+  background-color:none;
+  text-decoration: none;
+  border: none;
+  outline: 3px solid var(--black);
+  color: var(--red);
+
+
+}
+.btn-primary:hover {
+  background-color:var(--orange) ;
+  border: none;
+  outline: 3px solid var(--black);
+  text-decoration: none;
+  color: var(--black);
+}

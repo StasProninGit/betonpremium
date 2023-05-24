@@ -1,50 +1,204 @@
-.tabs {
-  font-size: 0;
+* {
+  box-sizing: border-box;
+}
+
+.beton__content {
+  display: flex;
+}
+
+.beton__content__right {
+  padding: 20px;
   max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgb(129, 129, 129, 0.4);
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.tabs>input[type="radio"] {
-  display: none;
+.beton__content__right__title {
+  color: rgb(253, 110, 74);
+  font-weight: 800;
+  font-size: 32px;
 }
 
-.tabs>div {
-  /* скрыть контент по умолчанию */
-  display: none;
-  border: 1px solid #e0e0e0;
-  padding: 10px 15px;
+.beton__content__right__text {
   font-size: 16px;
+  color: #fff;
 }
 
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-#tab-btn-1:checked~#content-1,
-#tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3 {
-  display: block;
+.beton__form__btn {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 22px;
+  border: none;
+  background-color:rgba(248, 167, 146, 1);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
-.tabs>label {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: #f5f5f5;
-  border: 1px solid #e0e0e0;
-  padding: 2px 8px;
-  font-size: 16px;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-  cursor: pointer;
+.beton__form__btn:hover {
+  background-color: rgb(253, 110, 74);
+  color: black;
+  transform: scale(1.1);
+}
+
+.wrapper {
+  /* max-width: fit-content; */
+  width: 100%;
+  /* margin: 0 auto; */
+}
+.tabs {
   position: relative;
-  top: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* margin: 0 auto; */
+  background: none;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  width: 220px;
+  height: 45px;
+  padding: 7px;
+  background: var(--gray);
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  top: 0;
+  transition: all 0.25s;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+  color: var(--black);
+}
+.tab-content {
+  height: max-content;
+  width: 600px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 250px;
+  padding: 1.618rem;
+  background: #eee9e9;
+  color: #2c3e50;
+  border-radius: 10px 10px 10px 10px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.tab-switch:checked + .tab-label {
+  background: #eee9e9;
+  color: #2c3e50;
+  border-bottom: 0;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  height: auto;
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
 }
 
-.tabs>label:not(:first-of-type) {
-  border-left: none;
+.beton {
+  height: 650px;
 }
 
-.tabs>input[type="radio"]:checked+label {
-  background-color: #fff;
-  border-bottom: 1px solid #fff;
+.beton__title {
+  width: fit-content;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 800;
 }
+
+.beton__title__price {
+  color: rgb(253, 110, 74) ;
+}
+
+.tovarnybeton__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.tovarnybeton__list__item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(248, 167, 146, 1);
+}
+
+.tovarnybeton__list__item__title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+
+.tovarnybeton__list__item__name {
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.tovarnybeton__list__item__name:hover  {
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  transform: scale(1.1);
+}
+
+.name-mark {
+  transition: color 0.3s ease-in-out;
+}
+.tovarnybeton__list__item__name:hover .name-mark {
+  color: red;
+}
+
+.tovarnybeton__list__item__price {
+  font-size: 22px;
+  color: red;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+
+.tovarnybeton__list__item__name:hover + .tovarnybeton__list__item__price {
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  transform: scale(1.1)
+}
+
+.name-mark {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
